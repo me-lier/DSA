@@ -1,0 +1,32 @@
+This algorithm is based on the DIVIDE AND CONQUER method;
+in this method we are puting the pivot value to its defined place
+and we divide the array in parts (Dividing) left and right part..
+
+pivot can be choosen based on the first/last/random number...
+
+it uses recursion call 
+and uses Partition method to return pivot element
+
+Chat-GPT:-
+QuickSort Algorithm: Detailed but Concise Overview
+
+QuickSort is an efficient, comparison-based divide-and-conquer sorting algorithm that works by partitioning an array into two sub-arrays based on a pivot element, sorting the sub-arrays independently, and combining the results.
+
+	1.	How it works:
+	•	Choose a pivot element from the list (usually the first, last, or a random element).
+	•	Partition the list into two parts: elements smaller than the pivot go to the left, and elements greater than the pivot go to the right.
+	•	Recursively apply QuickSort to the left and right sub-arrays.
+	•	Combine the sorted sub-arrays to form the final sorted list.
+	2.	Time Complexity:
+	•	Average Case: O(n log n), where n is the number of elements, due to the efficient partitioning.
+	•	Worst Case: O(n²), which happens when the pivot repeatedly divides the list in an unbalanced way (e.g., always choosing the smallest or largest element).
+	•	However, the worst case can be mitigated by using good pivot selection strategies like random pivots or median-of-three.
+	3.	Space Complexity:
+	•	O(log n) for the average case due to the recursion stack, though it can reach O(n) in the worst case.
+	•	QuickSort is usually implemented in-place, meaning it requires only a small, constant amount of extra memory beyond the input array.
+	4.	Characteristics:
+	•	Not stable: Equal elements may not maintain their relative order after sorting.
+	•	Efficient for large datasets, as its average-case time complexity is O(n log n), making it faster than many O(n²) algorithms like Bubble Sort, Selection Sort, or Insertion Sort.
+	•	Divide and conquer nature makes it highly adaptable and suitable for both in-memory and external sorting.
+
+QuickSort is one of the most widely used algorithms for sorting large datasets due to its excellent average-case performance and in-place sorting capability. However, care must be taken with pivot selection to avoid the worst-case scenario.

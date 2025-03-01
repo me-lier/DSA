@@ -1,0 +1,25 @@
+It is a stable Sorting Algorithm., in-place sorting algorithm
+
+
+
+chatgpt:
+Insertion Sort Algorithm: Detailed but Concise Overview
+
+Insertion Sort is a comparison-based sorting algorithm that builds a sorted list one element at a time by repeatedly taking the next unsorted element and inserting it into its correct position among the already sorted elements.
+
+	1.	How it works:
+	•	Start with the second element in the list, treating the first element as a sorted sublist.
+	•	Compare this element with the elements in the sorted sublist (left side), shifting larger elements one position to the right.
+	•	Insert the element in its correct position in the sorted sublist.
+	•	Repeat this process for each subsequent element, expanding the sorted section until the entire list is sorted.
+	2.	Time Complexity:
+	•	Worst and Average Case: O(n²), where n is the number of elements, as each new element may need to be compared with and inserted into a list of growing size.
+	•	Best Case: O(n), when the list is already sorted, as no shifts are needed.
+	3.	Space Complexity:
+	•	O(1), since sorting is done in place with no additional memory beyond a few variables for the current element and its insertion position.
+	4.	Characteristics:
+	•	Stable: Maintains the relative order of equal elements.
+	•	Efficient for small lists or nearly sorted lists due to its best-case linear performance.
+	•	Online algorithm: Can sort a list as elements arrive, useful for real-time data.
+
+Insertion Sort is preferred for small datasets or nearly sorted data due to its simplicity and efficiency in such cases, but it becomes inefficient for larger, unsorted datasets due to its quadratic time complexity.

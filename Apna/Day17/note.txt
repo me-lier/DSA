@@ -1,0 +1,5 @@
+for Binary Search operation we need the sorted array to pass...
+
+here for mid = (low + high) / 2 here we can encounter that the integer overflow..
+
+so optimized is to mid = low + (high - low) / 2
